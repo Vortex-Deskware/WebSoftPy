@@ -2,6 +2,7 @@
 
 
 Prerequisites
+
 -```pip install PyQt6 PyQt6-WebEngine pyinstaller``` |For 1.0 Full Release onwards.
 
 - ```pip install PyQt5 PyQtWebEngine pyinstaller```  |For 1.0 Pre-Release (Legacy)
