@@ -2,7 +2,7 @@
 
 
 Prerequisites
-- ```pip install PyQt5 pyinstaller```
+- ```pip install PyQt5 PyQtWebEngine pyinstaller```
 
 ---
 # Usage
