@@ -15,6 +15,8 @@ Prerequisites
 3) When prompted to build the executable, type Y (if you want to get a .exe file).
 4) Navigate to the `webapps` folder inside your build directory to access your freshly built app.
 
+**Pymake is provided in both .py and .exe forms.**
+
   ---
 
   Your filetree should look like this
