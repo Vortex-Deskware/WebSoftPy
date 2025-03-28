@@ -8,12 +8,12 @@ def sanitize_filename(title):
     return ''.join(c for c in sanitized if c.isalnum() or c == '_') + '.py'
 
 def generate_script(title, url, filename):
-    """Generates the PyQt5 browser script"""
+    """Generates the PyQt6 browser script"""
     code = f"""
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5.QtWebEngineWidgets import QWebEngineView
-from PyQt5.QtCore import QUrl
+from PyQt6.QtWidgets import QApplication, QMainWindow
+from PyQt6.QtWebEngineWidgets import QWebEngineView
+from PyQt6.QtCore import QUrl
 
 class BrowserWindow(QMainWindow):
     def __init__(self):
@@ -24,13 +24,12 @@ class BrowserWindow(QMainWindow):
         self.browser = QWebEngineView()
         self.setCentralWidget(self.browser)
         self.browser.load(QUrl("{url}"))
-        self.browser.show()
+        self.show()  # Moved show() to __init__
 
 def main():
     app = QApplication(sys.argv)
     window = BrowserWindow()
-    window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 
 if __name__ == "__main__":
     main()
@@ -39,7 +38,7 @@ if __name__ == "__main__":
         f.write(code.strip())
 
 def build_executable(script_path, output_dir, exe_name):
-    """Builds executable using PyInstaller"""
+    """Builds executable with PyInstaller and required hidden imports"""
     try:
         subprocess.run([
             'pyinstaller',
@@ -47,6 +46,9 @@ def build_executable(script_path, output_dir, exe_name):
             '--windowed',
             '--name', exe_name,
             '--distpath', output_dir,
+            '--hidden-import', 'PyQt6.QtWebEngineCore',
+            '--hidden-import', 'PyQt6.QtNetwork',
+            '--hidden-import', 'PyQt6.sip',
             script_path
         ], check=True)
         print(f"✅ Executable built successfully in: {output_dir}")
