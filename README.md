@@ -7,10 +7,10 @@ Prerequisites
 ---
 # Usage
 
--1 Run Pymake ```python Pymake.py```
--2 Enter the app name and the URL of the website you want to convert to a Web Application.
--3 When prompted to build the executable, type Y (if you want to get a .exe file).
--4 Navigate to the `webapps` folder inside your build directory to access your freshly built app.
+1) Run Pymake ```python Pymake.py```
+2) Enter the app name and the URL of the website you want to convert to a Web Application.
+3) When prompted to build the executable, type Y (if you want to get a .exe file).
+4) Navigate to the `webapps` folder inside your build directory to access your freshly built app.
 
   ---
 
@@ -24,5 +24,6 @@ Prerequisites
 
 ## Notes from devs:
 
--**Be aware that Pymake is by no means perfect, but it will improve. We are struggling with getting all the sites to display properly, but most of them are already "usable"** (for the _most part_ at least).
+1)**Be aware that Pymake is by no means perfect, but it will improve. We are struggling with getting all the sites to display properly, but most of them are already "usable"** (for the _most part_ at least).
+
 -Hopefully it works for you!
