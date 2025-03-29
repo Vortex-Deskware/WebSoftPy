@@ -31,4 +31,4 @@ Prerequisites
 
 1)**Be aware that Pymake is by no means perfect, but it will improve. We are struggling with getting all the sites to display properly, but most of them are already "usable"** (for the _most part_ at least).
 
--Hopefully it works for you!
+- Hopefully it works for you!
