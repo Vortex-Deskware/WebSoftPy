@@ -7,7 +7,7 @@ Prerequisites
 
 - ```pip install PyQt5 PyQtWebEngine pyinstaller```  |For 1.0 Pre-Release (Legacy)
 
-- **Or** use the included batch script and run it (If you are on Windows).
+- **Or** run the included batch script (If you are on Windows).
 
 ---
 # Usage
