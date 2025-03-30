@@ -37,3 +37,10 @@ Prerequisites
 **Be aware that Pymake is by no means perfect, but it will improve.**
 
 - Hopefully it works for your usecase!
+
+### Q/A
+
+- (Q) Why is the file size of the `.exe` files so big compared to `.py`?
+(A) Because that's just how pyinstaller bundles the prerequisites and the Python interpreter, combined with the source code into a single file. Feel free to compress the executables using: https://upx.github.io/
+- (Q) What licence is Pymake under?
+(A) Pymake is licenced under the Apache 2.0 Licence (Details available on the LICENCE tab).
