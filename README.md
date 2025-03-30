@@ -27,7 +27,7 @@ Prerequisites
 
 ![image](https://github.com/user-attachments/assets/fe73d65f-c396-4dbd-8fe8-583ce22b624d)
 
-  In the "webapps" folder theres a `.py` file of the generated script (which contains the source code) and a `.exe` file (if you chose to generate one).
+  In the `webapps` folder theres a `.py` file of the generated script (which contains the source code) and a `.exe` file (if you chose to generate one).
 
 ![image](https://github.com/user-attachments/assets/cc07e8e1-737a-42fa-9dfc-11d915d8829f)
 
