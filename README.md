@@ -43,7 +43,7 @@ At this stage you are told to enter a name and URL for the webapp you want to cr
 
 ![image](https://github.com/user-attachments/assets/45502de9-b351-42fc-82a5-278e02482405)
 
-You are now asked wether you wish to build an executable or not. The build process utilizes `pyinstaller` and generates a relatively large file.
+You are now asked wether you wish to build an executable or not. The build process utilizes `pyinstaller` and generates a relatively large file (~155MB).
 - We only recommend building the executable if you want portability and/or running it on computers that do not have python installed.
 
 ## Notes from devs:
