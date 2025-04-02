@@ -31,6 +31,20 @@ Prerequisites
 
 ![image](https://github.com/user-attachments/assets/cc07e8e1-737a-42fa-9dfc-11d915d8829f)
 
+-------------------------------------------------------------------------------------
+## How does the app look like?
+1. **Upon launching Pymake, you are greeted with this:**
+
+![image](https://github.com/user-attachments/assets/f8671afe-73be-446c-bea5-a583331e0277)
+
+At this stage you are told to enter a name and URL for the webapp you want to create. Rest is self explanatory.
+
+2. **Upon inputting name and URL, the .py script is generated and saved in the `webapps` folder.**
+
+![image](https://github.com/user-attachments/assets/45502de9-b351-42fc-82a5-278e02482405)
+
+You are now asked wether you wish to build an executable or not. The build process utilizes `pyinstaller` and generates a relatively large file.
+- We only recommend building the executable if you want portability and/or running it on computers that do not have python installed.
 
 ## Notes from devs:
 
