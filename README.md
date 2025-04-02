@@ -54,9 +54,9 @@ You are now asked wether you wish to build an executable or not. The build proce
 
 ### Q/A
 
-- (Q) Why is the file size of the `.exe` files so big compared to `.py`?
+- (Q) Why are .exe files significantly larger than .py files?
 
-(A) Because that's just how pyinstaller bundles the prerequisites and the Python interpreter, combined with the source code into a single file. Feel free to compress the executables using: https://upx.github.io/
+(A) This is because PyInstaller bundles the Python interpreter, dependencies, and source code into a single executable file. You can reduce the file size by compressing the executable using: https://upx.github.io/
 
 
 - (Q) What licence is Pymake under?
