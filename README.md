@@ -54,7 +54,7 @@ You are now asked wether you wish to build an executable or not. The build proce
 
 ### Q/A
 
-- (Q) Why are .exe files significantly larger than .py files?
+- (Q) Why are `.exe` files significantly larger than `.py` files?
 
 (A) This is because PyInstaller bundles the Python interpreter, dependencies, and source code into a single executable file. You can reduce the file size by compressing the executable using: https://upx.github.io/
 
