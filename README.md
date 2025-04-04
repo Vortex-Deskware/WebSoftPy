@@ -1,4 +1,5 @@
-# Pymake - The Ultimate WebAPP maker for your needs.
+# WebFusionPy _(formerly Pymake)_ - The Ultimate WebAPP maker for your needs.
+# Next update will feature the new name ;)
 
 
 Prerequisites
