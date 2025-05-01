@@ -1,4 +1,4 @@
-# WebFusionPy _(formerly Pymake)_ - The Ultimate WebAPP maker for your needs.
+# WebSoftPy _(formerly Pymake)_ - The Ultimate WebAPP maker for your needs.
 # Next update will feature the new name ;)
 
 
