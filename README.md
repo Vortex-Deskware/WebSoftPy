@@ -1,5 +1,4 @@
 # WebSoftPy _(formerly Pymake)_ - The Ultimate WebAPP maker for your needs.
-# Next update will feature the new name ;)
 
 ![r2-final-transparent](https://github.com/user-attachments/assets/745fefe2-aa95-4d47-b0c1-d9d9ca625186)
 
