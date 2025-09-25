@@ -48,7 +48,7 @@ After generation, your project directory will look like this:
 
 ```
 your_project/
-├── websoftpy_gui.py          ← Generator (run this)
+├── WebSoftPy.py          ← Generator (run this)
 ├── elements/                 ← SVG icons + logo.png
 │   ├── minimize.svg
 │   ├── maximize.svg
