@@ -21,7 +21,7 @@ WebSoftPy is a desktop application that converts any website into a standalone d
 ## How to Use
 
 1. **Fill in the details**:  
-   - **Application Title**: The name of your web app (e.g., "My Notion App").  
+   - **Application Title**: The name of your web app (e.g., "My WebSoftPy App").  
    - **Target URL**: The full `https://` (or `http://`) address of the site.  
    - **Title Bar Style**: Choose from:
      - *Normal*: Standard OS window.
