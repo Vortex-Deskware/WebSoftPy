@@ -105,4 +105,4 @@ A: Yes. Replace the SVG files in the `elements/` folder (`minimize.svg`, `maximi
 
 ---
 
-— Vortex Deskware © 2025
+Vortex Deskware © 2025
