@@ -16,50 +16,91 @@ Prerequisites
 ---
 # Usage (DEPRECATED - WILL BE UPDATED SOON)
 
-1) Run Pymake ```python Pymake.py```
-2) Enter the app name and the URL of the website you want to convert to a Web Application.
-3) When prompted to build the executable, type Y (if you want to get a .exe file).
-4) Navigate to the `webapps` folder inside your build directory to access your freshly built app.
+WebSoftPy is a desktop application that converts any website into a standalone desktop web app using PyQt6 and Qt WebEngine.
 
-**Pymake is provided in both .py and .exe forms.**
+## How to Use
+
+1. **Fill in the details**:  
+   - **Application Title**: The name of your web app (e.g., "My Notion App").  
+   - **Target URL**: The full `https://` (or `http://`) address of the site.  
+   - **Title Bar Style**: Choose from:
+     - *Normal*: Standard OS window.
+     - *WebSoftPy Flow*: Custom frameless window with SVG-based controls.
+     - *Frameless Window*: Borderless, draggable window with no buttons.
+   - **Persistent Storage**: Enable to save cookies, cache, and local data between sessions.
+
+2. **Generate the app**:  
+   Click **"Generate Web App"**. A `.py` script will be saved in the `webapps/` folder.
+
+3. **(Optional) Build an executable**:  
+   Click **"Build Executable"** to create a standalone `.exe` (Windows) or binary (macOS/Linux) using PyInstaller.  
+   > ⚠️ This requires `pyinstaller` to be installed (`pip install pyinstaller`).
+
+4. **Run your app**:  
+   - Use the `.py` file directly (requires Python + PyQt6).  
+   - Or run the generated executable for portability.
+
+---
+
+### File Structure
+
+After generation, your project directory will look like this:
+
+```
+your_project/
+├── websoftpy_gui.py          ← Generator (run this)
+├── elements/                 ← SVG icons + logo.png
+│   ├── minimize.svg
+│   ├── maximize.svg
+│   ├── close.svg
+│   └── logo.png
+└── webapps/                  ← Generated apps go here
+    ├── my_app.py             ← Source code
+    └── my_app/               ← Executable (if built)
+        └── my_app.exe
+```
+
+> **Important**:  
+> - Do **not move** generated apps outside the `webapps/` folder—this breaks SVG icon paths.  
+> - Do **not rename** a webapp after logging in—this will reset persistent storage and delete cookies.  
+> - For easy access, create desktop shortcuts instead.
+
+---
+
+## How the Generator Looks
+
+The WebSoftPy GUI provides a clean, dark-themed interface:
+
+- Input fields for title and URL  
+- Dropdown to select title bar style  
+- Dynamic description of the selected mode  
+- Toggle for persistent storage  
+- One-click generation and build buttons  
+
+<img width="582" height="492" alt="image" src="https://github.com/user-attachments/assets/c420e0d0-f01c-4cd6-b59c-3e6691115c18" />
 
 
-  ### Your FileTree should look like this:
+---
 
-![image](https://github.com/user-attachments/assets/fe73d65f-c396-4dbd-8fe8-583ce22b624d)
+## Notes from Developers
 
-  In the `webapps` folder theres a `.py` file of the generated script (which contains the source code) and a `.exe` file (if you chose to generate one).
+- WebSoftPy is actively maintained and will receive usability improvements (e.g., automatic shortcut creation).  
+- The tool is generic—no site is hardcoded. It works with any valid URL.  
+- Generated apps are fully self-contained and respect user privacy settings.
 
-![image](https://github.com/user-attachments/assets/cc07e8e1-737a-42fa-9dfc-11d915d8829f)
+---
 
--------------------------------------------------------------------------------------
-## How does the app look like?
-1. **Upon launching Pymake, you are greeted with this:**
+### Frequently Asked Questions
 
-![image](https://github.com/user-attachments/assets/f8671afe-73be-446c-bea5-a583331e0277)
+**Q: Why are `.exe` files so large (~150 MB)?**  
+A: PyInstaller bundles the Python interpreter, PyQt6, Qt WebEngine, and all dependencies. To reduce size, compress the executable with [UPX](https://upx.github.io/), a free and secure executable packer that typically reduces file size by 50–70% with no runtime penalty.
 
-At this stage you are told to enter a name and URL for the webapp you want to create. Rest is self explanatory.
+**Q: What license is WebSoftPy under?**  
+A: WebSoftPy is licensed under the **Apache License 2.0**. See the `LICENSE` file for details.
 
-2. **Upon inputting name and URL, the .py script is generated and saved in the `webapps` folder.**
+**Q: Can I customize the title bar buttons?**  
+A: Yes. Replace the SVG files in the `elements/` folder (`minimize.svg`, `maximize.svg`, `close.svg`) with your own—just keep the same filenames.
 
-![image](https://github.com/user-attachments/assets/45502de9-b351-42fc-82a5-278e02482405)
+---
 
-You are now asked wether you wish to build an executable or not. The build process utilizes `pyinstaller` and generates a relatively large file (~155MB).
-- We only recommend building the executable if you want portability and/or running it on computers that do not have python installed.
-
-## Notes from devs:
-
-**Be aware that Pymake is by no means perfect, but it will improve.**
-
-- Hopefully it works for your usecase!
-
-### Q/A
-
-- (Q) Why are `.exe` files significantly larger than `.py` files?
-
-(A) This is because PyInstaller bundles the Python interpreter, dependencies, and source code into a single executable file. You can reduce the file size by compressing the executable using: https://upx.github.io/
-
-
-- (Q) What licence is Pymake under?
-
-(A) Pymake is licenced under the Apache 2.0 Licence (Details available on the LICENCE tab).
+— Vortex Deskware © 2025
