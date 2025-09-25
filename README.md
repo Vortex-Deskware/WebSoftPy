@@ -14,7 +14,7 @@ Prerequisites
 
 
 ---
-# Usage (DEPRECATED - WILL BE UPDATED SOON)
+# Usage
 
 WebSoftPy is a desktop application that converts any website into a standalone desktop web app using PyQt6 and Qt WebEngine.
 
