@@ -2,13 +2,15 @@
 
 ![r2-final-transparent](https://github.com/user-attachments/assets/745fefe2-aa95-4d47-b0c1-d9d9ca625186)
 
-Prerequisites
+## Prerequisites
+
+---
 
 - ```pip install PyQt6 PyQt6-WebEngine pyinstaller``` |For 1.0 Full Release onwards.
 
   **Or** run the included batch script (If you are on Windows).
 
--------------------------------------------------------------------------------------
+---
 
 - ```pip install PyQt5 PyQtWebEngine pyinstaller```  |For 1.0 Pre-Release (Legacy)
 
