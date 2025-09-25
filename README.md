@@ -14,7 +14,7 @@ Prerequisites
 
 
 ---
-# Usage
+# Usage (DEPRECATED - WILL BE UPDATED SOON)
 
 1) Run Pymake ```python Pymake.py```
 2) Enter the app name and the URL of the website you want to convert to a Web Application.
