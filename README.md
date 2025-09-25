@@ -55,7 +55,7 @@ your_project/
 │   ├── minimize.svg
 │   ├── maximize.svg
 │   ├── close.svg
-│   └── logo.png
+│   └── logo.png - Not present currently (Placeholder for future use)
 └── webapps/                  ← Generated apps go here
     ├── my_app.py             ← Source code
     └── my_app/               ← Executable (if built)
