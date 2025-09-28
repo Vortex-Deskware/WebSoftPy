@@ -25,10 +25,17 @@ WebSoftPy is a desktop application that converts any website into a standalone d
 1. **Fill in the details**:  
    - **Application Title**: The name of your web app (e.g., "My WebSoftPy App").  
    - **Target URL**: The full `https://` (or `http://`) address of the site.  
-   - **Title Bar Style**: Choose from:
-     - *Normal*: Standard OS window.
-     - *WebSoftPy Flow*: Custom frameless window with SVG-based controls.
-     - *Frameless Window*: Borderless, draggable window with no buttons.
+   - **Window Style**: Choose from:
+     - *Normal*: Standard OS window.  
+     - *Custom Title Bar*: Frameless window with draggable title bar and **theme-based SVG controls**.  
+     - *Frameless Window*: Borderless, draggable window with no buttons.  
+   - **Theme** *(visible only for “Custom Title Bar”)*: Select a visual style:  
+     - *WebSoftPy Flow* (original)  
+     - *WebSoftPy Desk* (minimal)  
+     - *WebSoftPy Color* (colored icons)  
+     - *WebSoftPy Fizz* (bubble-inspired)  
+     - *WebSoftPy Text* (text-based labels)  
+     - *WebSoftPy Draw* (hand-drawn style)  
    - **Persistent Storage**: Enable to save cookies, cache, and local data between sessions.
 
 2. **Generate the app**:  
@@ -50,15 +57,20 @@ After generation, your project directory will look like this:
 
 ```
 your_project/
-├── WebSoftPy.py          ← Generator (run this)
-├── elements/                 ← SVG icons + logo.png
-│   ├── minimize.svg
-│   ├── maximize.svg
-│   ├── close.svg
-│   └── logo.png - Not present currently (Placeholder for future use)
-└── webapps/                  ← Generated apps go here
-    ├── my_app.py             ← Source code
-    └── my_app/               ← Executable (if built)
+├── WebSoftPy.py        ← Generator (run this)
+├── elements/               ← Theme assets
+│   ├── WebSoftPy Flow/
+│   │   ├── minimize.svg
+│   │   ├── maximize.svg
+│   │   └── close.svg
+│   ├── WebSoftPy Desk/
+│   ├── WebSoftPy Color/
+│   ├── WebSoftPy Fizz/
+│   ├── WebSoftPy Text/
+│   └── WebSoftPy Draw/
+└── webapps/                ← Generated apps go here
+    ├── my_app.py           ← Source code
+    └── my_app/             ← Executable (if built)
         └── my_app.exe
 ```
 
@@ -74,12 +86,13 @@ your_project/
 The WebSoftPy GUI provides a clean, dark-themed interface:
 
 - Input fields for title and URL  
-- Dropdown to select title bar style  
+- Dropdown to select window style  
+- **Theme selector** (appears when “Custom Title Bar” is chosen)  
 - Dynamic description of the selected mode  
 - Toggle for persistent storage  
 - One-click generation and build buttons  
 
-<img width="582" height="492" alt="image" src="https://github.com/user-attachments/assets/c420e0d0-f01c-4cd6-b59c-3e6691115c18" />
+<img width="622" height="552" alt="image" src="https://github.com/user-attachments/assets/0289cada-bd4b-4a95-bdb6-18a34644e2f3" />
 
 
 ---
@@ -87,8 +100,9 @@ The WebSoftPy GUI provides a clean, dark-themed interface:
 ## Notes from Developers
 
 - WebSoftPy is actively maintained and will receive usability improvements (e.g., automatic shortcut creation).  
-- The tool is generic—no site is hardcoded. It works with any valid URL.  
-- Generated apps are fully self-contained and respect user privacy settings.
+- The tool is generic, no site is hardcoded. It works with any valid URL.  
+- Generated apps are fully self-contained and respect user privacy settings.  
+- Version 2.5 introduces **Expressional** theming, let your desktop reflect your style.
 
 ---
 
@@ -101,8 +115,9 @@ A: PyInstaller bundles the Python interpreter, PyQt6, Qt WebEngine, and all depe
 A: WebSoftPy is licensed under the **Apache License 2.0**. See the `LICENSE` file for details.
 
 **Q: Can I customize the title bar buttons?**  
-A: Yes. Replace the SVG files in the `elements/` folder (`minimize.svg`, `maximize.svg`, `close.svg`) with your own—just keep the same filenames.
+A: Yes. Each theme has its own folder in `elements/`. You can edit or replace the SVGs in any theme folder (e.g., `elements/WebSoftPy Desk/minimize.svg`). Just keep the filenames unchanged.
 
 ---
 
-Vortex Deskware © 2025
+Vortex Deskware © 2025  
+*WebSoftPy 2.5 Full Release | Expressional*
