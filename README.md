@@ -1,4 +1,4 @@
-# WebSoftPy: Websites → Desktop Apps. Done.
+# WebSoftPy -> Turn any website into a desktop app. Fast, flexible, yours.
 
 ![r2-final-transparent](https://github.com/user-attachments/assets/745fefe2-aa95-4d47-b0c1-d9d9ca625186)
 
