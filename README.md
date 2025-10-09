@@ -1,6 +1,6 @@
 # Turn any website into a desktop app. Fast, flexible, yours. That's WebSoftPy.
 
-![r2-final-transparent](https://github.com/user-attachments/assets/745fefe2-aa95-4d47-b0c1-d9d9ca625186)
+<img width="1920" height="1080" alt="websoftpy_GUI_logo_16to9" src="https://github.com/user-attachments/assets/b719749b-cbd3-41c4-96fd-78ea3b550ea1" />
 
 ## Prerequisites
 
