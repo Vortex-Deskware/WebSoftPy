@@ -3,6 +3,8 @@
 <img width="1920" height="1080" alt="websoftpy_GUI_logo_16to9" src="https://github.com/user-attachments/assets/b719749b-cbd3-41c4-96fd-78ea3b550ea1" />
 
 ## Prerequisites
+> [!IMPORTANT]
+> This software is only tested on Windows 10/11, you may have varying success on Linux/MacOS.
 
 ---
 
@@ -10,11 +12,12 @@
 
   **Or** run the included batch script (If you are on Windows).
   - Pyinstaller is not required, but is needed if you wish to create executables.
-
 ---
 
 - ```pip install PyQt5 PyQtWebEngine pyinstaller```  |For 1.0 Pre-Release (Legacy)
   - Pyinstaller is not required, but is needed if you wish to create executables.
+> [!WARNING]
+> These legacy versions are no longer supported, but remain fully usable!
 
 
 ---
