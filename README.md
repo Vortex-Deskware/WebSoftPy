@@ -9,12 +9,12 @@
 - ```pip install PyQt6 PyQt6-WebEngine pyinstaller``` |For 1.0 Full Release onwards.
 
   **Or** run the included batch script (If you are on Windows).
-  - Pyinstaller is not required, but is needed if you want to create executables.
+  - Pyinstaller is not required, but is needed if you wish to create executables.
 
 ---
 
 - ```pip install PyQt5 PyQtWebEngine pyinstaller```  |For 1.0 Pre-Release (Legacy)
-  - Pyinstaller is not required, but is needed if you want to create executables.
+  - Pyinstaller is not required, but is needed if you wish to create executables.
 
 
 ---
