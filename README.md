@@ -14,6 +14,7 @@
 ---
 
 - ```pip install PyQt5 PyQtWebEngine pyinstaller```  |For 1.0 Pre-Release (Legacy)
+  - Pyinstaller is not required, but is needed if you want to create executables.
 
 
 ---
